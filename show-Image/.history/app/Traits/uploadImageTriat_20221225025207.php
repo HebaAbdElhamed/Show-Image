@@ -7,7 +7,7 @@ trait uploadImageTriat
 {
     public function uploadImage(Request $request,$folderName){
         $image = $request->file('photo')->getClientOriginalName();
-        $path = $request->file('photo')->storeAs($folderName,$image,'public');
+        $path = $request->file('photo')->storeAs($folderName,$image,'heba');
         return $path;
     }
 }

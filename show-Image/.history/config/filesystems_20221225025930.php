@@ -47,7 +47,7 @@ return [
         'hebaDisk' => [
             'driver' => 'local',
             'root' => storage_path('imgs'),
-            'url' => env('APP_URL').'/storage',
+            'url' => env('APP_URL').'/public',
             'visibility' => 'public',
             'throw' => false,
         ],

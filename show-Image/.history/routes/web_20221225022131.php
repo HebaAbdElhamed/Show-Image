@@ -18,4 +18,4 @@ Route::get('/', function () {
 });
 
 Route::post('store',[uploadImageController::class ,'store' ])->name('photo.save');
-Route::post('showimage',[uploadImageController::class ,'index' ])->name('show');
+Route::get('showimage',[uploadImageController::class ,'index' ]);

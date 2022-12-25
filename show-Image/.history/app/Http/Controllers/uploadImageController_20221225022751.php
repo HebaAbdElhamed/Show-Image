@@ -15,11 +15,11 @@ class uploadImageController extends Controller
         Image::create([
             'path' => $path,
         ]);
-        return view('upload');
+        return view('index');
     }
 
     public function index(){
         $images = Image::all();
-        return view('index',compact('images'));
+        retuen view('index',compact('images'));
     }
 }

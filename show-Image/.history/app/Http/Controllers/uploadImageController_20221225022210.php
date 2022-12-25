@@ -19,7 +19,6 @@ class uploadImageController extends Controller
     }
 
     public function index(){
-        $images = Image::all();
-        return view('index',compact('images'));
+        $im
     }
 }

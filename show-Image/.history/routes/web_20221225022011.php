@@ -17,5 +17,4 @@ Route::get('/', function () {
     return view('photo.welcome');
 });
 
-Route::post('store',[uploadImageController::class ,'store' ])->name('photo.save');
-Route::post('showimage',[uploadImageController::class ,'index' ])->name('show');
+Route::post('store',[uploadImageController::class ,'store' ])->name('photo.save');R
